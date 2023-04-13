@@ -1,0 +1,194 @@
+.fa-circle-check{
+    padding: 0;
+}
+.task-middle-section-body{
+    height: 92%;
+    width: 100%;
+    border-radius: 15px;
+    position: absolute;
+    transform: scale(0);
+    transition: 0.5s;
+    justify-content: flex-start;
+    z-index: 31;
+}
+.show-from-scale{
+    transform: scale(1);
+}
+.single-projects-task-heading{
+    width: 100%;
+    font-size: 25px;
+    text-align: left;
+}
+.single-project-task-wrapper{
+    max-width: 1100px;
+    width: 100%;
+    padding: 10px;
+    height: 50%;
+    border-radius: 15px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.14);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+.single-task-wrapper{
+    width: 95%;
+    height: 85%;
+    overflow: scroll;
+    justify-content: flex-start;
+}
+.single-task-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.single-task{
+    padding: 10px;
+    max-width: 800px;
+    width: 98%;
+    justify-content: space-between;
+    margin: 10px 0px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.task-name-checkbox-wrapper, .task-buttons-photos-wrapper{
+    width: 50%;
+}
+.task-name-checkbox-wrapper{
+    justify-content: flex-start;
+}
+.task-buttons-photos-wrapper{
+    justify-content: flex-end;
+}
+.common-task-check-input{
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    font-size: 30px;
+}
+
+.single-task-heading{
+    margin: 0px 10px;
+}
+.finish-task{
+    text-decoration: line-through;
+}
+.all-task-people-wrapper{
+    width: 120px;
+    position: relative;
+}
+.task-buttons-wrapper{
+    opacity: 0;
+    width: 100px;
+    transition: 0.5s;
+}
+.single-task:hover .task-buttons-wrapper{
+    opacity: 1;
+}
+.single-task-icon{
+    padding: 5px 5px;
+    font-size: 20px;
+}
+.single-task-icon:active {
+    transform: scale(0.9);
+}
+.single-task-icon:hover {
+    background-color: rgb(240, 241, 243);
+}
+.task-person-1{
+    left: 5px;
+}
+.task-person-2{
+    left: 25px;
+}
+.task-options-wrapper{
+    padding: 0px;
+    position: absolute;
+    right: 10px;
+    top: 100%;
+    border-radius: 15px;
+    height: 0;
+    overflow: hidden;
+}
+.task-option{
+    list-style-type: none;
+    padding: 10px;
+}
+.task-option:hover{
+    background-color: rgb(235, 237, 239);
+}
+.more-person-task {
+    left: 65px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(221,221,223);
+}
+.no-task-heading{
+    font-size: 25px;
+}
+.show-two-option{
+    height: 150px;
+}
+.show-one-option{
+    height: 80px;
+}
+.three-dots-task-input{
+    display: none;
+}
+.task-three-dots-label{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.task-three-dots-label:hover {
+    background-color: white;
+}
+.empty-task-div{
+    width: 100%;
+    height: 90%;
+    background-image: url(/ProApp/assets/images/empty_task.png);
+}
+.empty-task-div-wrapper{
+    max-width: 700px;
+    width: 80%;
+    height: 500px;
+    justify-content: space-around;
+    text-align: center;
+}
+@media screen and (max-width: 720px){
+    .empty-task-div{
+        height: 75%;
+    }
+}
+@media screen and (max-width: 610px){
+    .empty-task-div{
+        height: 70%;
+    }
+}
+@media screen and (max-width: 580px){
+    .empty-task-div{
+        height: 60%;
+    }
+}
+@media screen and (max-width: 425px){
+    .empty-task-div-wrapper{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 355px){
+    .task-image{
+        width: 30px;
+        height: 30px;
+    }
+    .task-outer-image{
+        width: 32px;
+        height: 32px;
+    }
+    .empty-task-div{
+        height: 60%;
+    }
+    .empty-task-div-wrapper{
+        height: 300px;
+    }
+}
+.center-the-box {
+    justify-content: center;
+}

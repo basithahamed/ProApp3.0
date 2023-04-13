@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body, html {
+    height: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family : "Zoho_Puvi_Regular";
+}
+.x-axis-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.y-axis-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.common-icon-style{
+    width: 23px;
+}
+.common-close-icon{
+    width: 35px;
+}
+.bell-icon-style{
+    padding-top: 10px;
+    width: 20px;
+}
+.full-light-theme {
+    background-color: white;
+    color: black;
+}
+.light-theme {
+    background-color: rgb(235, 237, 239);
+}
+.semi-light-theme {
+    background-color: rgb(246,246,248);
+}
+.error-message-wrapper, .success-message-wrapper, .pop-up-message-wrapper{
+    max-width: 300px;
+    width: 95%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: -100px;
+    height: 80px;
+    left: 49%;
+    z-index: 110;
+    justify-content: space-between;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
+}
+.error-message, .success-message, .pop-up-message{
+    align-items: flex-start;
+    padding: 0px 10px;
+    z-index: 70;
+}
+.error-symbol, .success-symbol, .pop-up-symbol{
+    height: 100%;
+    font-size: 30px;
+    color: red;
+    border-left: 7px solid red;
+}
+.success-symbol{
+    color: green;
+    border-left: 7px solid green;
+}
+.pop-up-symbol{
+    color: rgb(64,142,238);
+    border-left: 7px solid rgb(64,142,238);
+}
+.fa-circle-xmark, .fa-circle-check{
+    padding-left: 10px;   
+}
+.error-close-button, .success-close-button, .pop-up-close-button{
+    padding-right: 10px;
+    color: rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.error-close-button:hover {
+    color: red;
+}
+.success-close-button:hover {
+    color: green;
+}
+.pop-up-close-button:hover {
+    color: rgb(64,142,238);  
+}
+.show-popup-message {
+    top: 100px;
+}
+.middle-main-section{
+    width: 100%;
+    height: 100%;
+}
+.top-header{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+.top-head-tag{
+    flex-grow: 1;
+    width: 166px;
+    height: 44px;
+    object-fit: cover;
+}
+.top-header-icon{
+    width: 50px;
+    height: 50px;
+}
+.mobile-top-header-icon{
+    display: none;
+}
+.main-body {
+    height: 92%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.right-side-sections{
+    position: relative;
+    max-width: 465px;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+    z-index: 31;
+}
+.side-nav-bar{
+    padding-top: 10px;
+    max-width: 115px;
+    min-width: 87px;
+    width: 8%;
+    height: 100%;
+    font-size: 25px;
+    justify-content: flex-start;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.common-i-tag{
+    margin: 30px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    max-width: 110px;
+    padding: 10px;
+    border-left: 7px solid white;
+    transition: 0.3s;
+}
+.common-i-tag:hover, .common-i-tag-click-effect{
+    color: rgb(63,142,238);
+    border-left: 7px solid rgb(63,142,238);
+}
+.middle-body{
+    width: 75%;
+    height: 100%;
+}
+.top-profile-image, .top-profile-image-desktop{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(/ProApp/assets/images/user.png);
+    background-size: cover;
+    cursor: pointer;
+    background-color: rgb(235, 237, 239);
+    display: none;
+}
+.top-profile-image-desktop{
+    display: block;
+}
+.settings-section-mobile-icon{
+    display: none;
+}
+.top-profile-wrapper{
+    position: relative;
+}
+#top-profile-option-photo{
+    display: none;
+}
+.top-profile-options-wrapper{
+    top: 100%;
+    right: 10%;
+    z-index: 100;
+    position: absolute;
+    background-color: rgb(235, 237, 239);
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+#top-profile-option-photo:checked + .top-profile-options-wrapper {
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.top-profile-options{
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.top-profile-options:hover {
+    background-color: white;
+}
+.notification-button{
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#notification-button-id{
+    display: none;
+}
+.notifcations-list{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    background-color: white;
+    height: 100px;
+    width: 300px;
+    padding: 0;
+    z-index: 100;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+#notification-button-id:checked + .notifcations-list {
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.notification-list-option{
+    list-style-type: none;
+}
+@media screen and (max-width: 1660px) {
+    .right-side-sections {
+        transform: translateX(100%);
+        position: absolute;
+        right: 0;
+    } 
+    .top-header{
+        justify-content: space-between;
+    }
+    .middle-body{
+        width: 100%;
+    }
+    .top-profile-image, .settings-section-mobile-icon{
+        display: block;
+    }
+    .top-profile-image-desktop{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    body{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .side-nav-bar{
+        flex-direction: row;
+        height: auto;
+        max-width: none;
+        width: 100%;
+        padding: 10px 5px;
+        justify-content: space-around;
+        padding-bottom: 0px;
+    }
+    .common-i-tag{
+        border: none;
+        font-size: 18px;
+        margin: 0;
+        border-bottom: 7px solid white;
+    }
+    .common-i-tag:hover, .common-i-tag-click-effect{
+        border: none;
+        border-bottom: 7px solid rgb(63,142,238);
+    }
+    .main-body{
+        height: 90%;
+    }
+    .top-header-icon, .top-head-tag{
+        display: none;
+    }
+    .middle-main-section{
+        width: 100%;
+        height: 92%;
+    }
+    .mobile-top-header-icon{
+        display: block;
+    }
+    .icon-label{
+        display: none;
+    }
+}
+@media screen and (max-width: 305px){
+    .notifcations-list{
+        width: 240px;
+    }
+}
